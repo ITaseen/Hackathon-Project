@@ -1,0 +1,31 @@
+# vision.py — temporary tracker stub
+import time
+import threading
+
+_tracking = False
+_thread = None
+
+def _tracker_loop():
+    global _tracking
+    print("[Tracker] Started tracking...")
+    while _tracking:
+        # This is where you’ll later read webcam frames with OpenCV
+        time.sleep(1)
+        print("[Tracker] Monitoring...")
+    print("[Tracker] Stopped tracking.")
+
+def start_tracker():
+    global _tracking, _thread
+    if not _tracking:
+        _tracking = True
+        _thread = threading.Thread(target=_tracker_loop)
+        _thread.start()
+        return True
+    return False
+
+def stop_tracker():
+    global _tracking
+    if _tracking:
+        _tracking = False
+        return True
+    return False
