@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///Users/abou/Hackathon-Project/frontend/my-next-app/app/page.tsx"],"sourcesContent":["import Head from \"next/head\";\nimport Pomodoro from \"./componenets/Pomodoro\";\n\nexport default function page() {\n  return (\n    <>\n      <Head>\n        <title>Pomodoro Timer</title>\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n      </Head>\n\n      <main className=\"min-h-screen flex items-center justify-center p-6\">\n        <Pomodoro />\n      </main>\n    </>\n  );\n}\n"],"names":[],"mappings":";;;;;AAAA;;;;;;;;;AAGe,SAAS;IACtB,qBACE;;0BACE,+QAAC,gNAAI;;kCACH,+QAAC;kCAAM;;;;;;kCACP,+QAAC;wBAAK,MAAK;wBAAW,SAAQ;;;;;;;;;;;;0BAGhC,+QAAC;gBAAK,WAAU;0BACd,cAAA,+QAAC;;;;;;;;;;;;AAIT","debugId":null}}]
+}
